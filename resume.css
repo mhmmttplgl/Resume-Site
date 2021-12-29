@@ -1,20 +1,28 @@
 body {
     margin: 0 200px;
-    background-image: url(assets/Kedi.gif);
-    background-size: cover;
+    background-image: url(assets/fon10.gif);
+    /* background-size: cover; */
 }
 
 .container {
-    background:rgba(212, 224, 47, 0.9);
+    /* background:rgba(245, 54, 54, 0.493); */
     padding-top: 50px;
-    
+    animation: mymove 5s infinite;    
 }
+@keyframes mymove {
+    0% {background-color: rgba(0, 255, 255, 0.8);}
+    25% {background-color: rgba(0, 255, 220, 0.8);}
+    50% {background-color: rgba(0, 255, 220, 0.8);}
+    100% {background-color: rgba(0, 255, 255, 0.8);}
+  }
+
 .background-image {
-    background-image: url(assets/Kedi.gif);
+    background-image: url(assets/fon2.gif);
     background-size: cover;
-}
+} 
 .general-info {
     display: flex;
+    padding: 0 0 20px 20px;
 }
 .technical-info {
     width: 100%;
@@ -28,22 +36,43 @@ body {
     font-size: 50px;
 }
 img {
-    background: red;
+    background: #ffffff;
+    padding:0%;
+    border-radius: 50%;
 }
-.main {
-    padding: 15px;
-    font-size: 25px;
-    display: flex;
-    /* width: 80%; */
+
+.main, hr{
+    padding: 3px;
+    display:flex;
 }
-.abur-cubur {
+.info {
     width: 70%;
 }
+
+hr{
+    margin: 0;
+    padding-bottom: 3px;
+    background-color: rgb(51, 0, 99);
+}
+
 .projects{
     width: 30%;
+    padding-left: 10px;
 }
 
-hr {
-    margin: 5px;
+.profession{
+    background-color: rgb(97, 104, 114);
+
 }
 
+table, th, td {
+    border:1px solid black;
+}
+
+.big-fonts {
+    font-size: 25px;
+}
+
+.class-spaces {
+    padding: 15px;
+}
